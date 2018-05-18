@@ -37,7 +37,7 @@ def generateWeatherDataset(outputfile, rows):
         i = 0
         while i < int(rows):
             row = {}
-            row['beach_name'] = random.choice(['San Juan', 'Muchavista', 'Urbanova', 'Postiguet', 'Carabassi']) + ' Beach'
+            row['beach_name'] = random.choice([('San Juan'), 'Muchavista', 'Urbanova', ('Postiguet', (38.3468118,-0.4630523,'15z')), 'Carabassi']) + ' Beach'
             row['measurement_timestamp'] = random.randint(1514764800000, currentMilliTime())
             row['water_temperature'] =  random.uniform(12.0, 26.0)
             row['turbidity'] = random.uniform(1.0, 2.0)
